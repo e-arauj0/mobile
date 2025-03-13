@@ -1,7 +1,6 @@
-import { StatusBar } from "expo-status-bar";
 import { SafeAreaView,View,Text, StyleSheet,TouchableOpacity} from "react-native";
 
-export default function Home() {
+export default function Home(props) {
     return(
         <SafeAreaView styles={styles.container}>
             <View style={styles.principal}>
@@ -10,11 +9,11 @@ export default function Home() {
             </View>
 
             <View>
-                <TouchableOpacity style={styles.button} onPress={() => {ProgressBarAndroidComponent.navigation.navigate('dica1')}}>
+                <TouchableOpacity style={styles.button} onPress={() => {props.navigation.navigate('Dicas1')}}>
                     <Text>Repertório de conhecimento sobre o assunto</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.button} onPress={() => {ProgressBarAndroidComponent.navigation.navigate('dica2')}}>
+                <TouchableOpacity style={styles.button} onPress={() => {props.navigation.navigate('Dicas2')}}>
                     <Text>dica 2</Text>
                 </TouchableOpacity>
             </View>

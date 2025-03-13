@@ -1,8 +1,9 @@
+import { StatusBar } from 'expo-status-bar';
+
 import { ImageBackground, SafeAreaView, View, Image, StyleSheet, Text} from "react-native";
 
-// import 'ImageBackfround' from './assets/background-dica1'
 
-export default function dica1(){
+export default function Dicas2(){
     return(
         // <ImageBackground source={require('../assets/background-dica1.jpg')}>
             <SafeAreaView style={styles.container}>

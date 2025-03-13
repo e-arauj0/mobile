@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 
-import RotasBotao from './componentes/rotasBotao'
+import RotasBotao from './componentes/RotasBotao';
 
 export default function App() {
   return (

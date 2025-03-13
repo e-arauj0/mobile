@@ -1,10 +1,10 @@
-import { ImageBackground, SafeAreaView, View, Image, StyleSheet, Text} from "react-native";
+import { StatusBar } from 'expo-status-bar';
 
-// import 'ImageBackfround' from './assets/background-dica1'
+import { SafeAreaView, View, Image, StyleSheet, Text} from "react-native";
 
-export default function dica1(){
+
+export default function Dicas1(){
     return(
-        // <ImageBackground source={require('../assets/background-dica1.jpg')}>
             <SafeAreaView style={styles.container}>
                 <View style={styles.principal}>
                     <Text style={styles.titulo}> Dica 1:</Text>
@@ -17,10 +17,12 @@ export default function dica1(){
                     <View style={styles.divImg}>
                         <Image source={require('../assets/dica1.jpg')} style={styles.img}></Image>
                     </View>
+                
                 </View>
-            </SafeAreaView>
-        // </ImageBackground>
 
+                <StatusBar style="auto" />
+                
+            </SafeAreaView>
     );
 }
 
